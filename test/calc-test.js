@@ -3,6 +3,9 @@ const {calculator, add} = require('../calc');
 
 
 describe('calc', () => {
+    it('exists', () => {
+        expect(calculator).to.be.ok;
+    })
     it('adds', () => {
         expect(calculator.add(2, 3)).to.be.eql(5);
     })
